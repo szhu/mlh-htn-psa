@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Primary Source Analysis: MLH/HtN incident</title>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/jquery.tipsy.css">
+	<link rel="stylesheet" href="css/jquery.tipsy.css">
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -141,19 +141,20 @@
 		</table>
 	</div>
 
-	<img src="http://3dn6i8277y3e2terx93zyfk5.wpengine.netdna-cdn.com/wp-content/uploads/2015/09/redacted-comments.jpg" alt="">
+	<img src="img/redacted-comments.jpg">
 	<div class="caption">The redacted screenshot of the comments that MLH posted on their blog.</div>
-	<img src="https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12002979_1021334061245249_3039324412825042492_n.jpg?oh=25f0f1c878180c3bacc6048e9c1d6493&oe=569FA15A" alt="">
+	<img src="img/12002979_1021334061245249_3039324412825042492_n.jpg" alt="">
 	<div class="caption">The screenshot from the <a href="https://www.facebook.com/groups/hackathonhackers/permalink/1123760574346093/">thread</a> posted to Hackathon Hackers about the incident.</div>
 
-	<script src="/js/jquery.2.js"></script>
-	<script src="/js/jquery.tipsy.js"></script>
+	<script src="js/jquery.2.js"></script>
+	<script src="js/jquery.tipsy.js"></script>
 	<script>
+	if (window.location.href.match(/^https?:\/\/.*\/index.html(\?.*)?(#.*)?$/)) window.location.href = '.';
 	var titles = [
-		'To what extent were the Hack the North organizers informed in the incident?',
-		'Which protocol or procedure was followed? Was it MLH\'s incident response procedure or Waterloo\'s Engineering building safety protocol?',
-		'If the protocol was being followed explicitly, why was the building not evacuated? Since it was clear that there was no bomb threat, why was a drastic action necessary?',
-		'Does MLH have authority to ban people from hackathons against organizers\' wishes?'
+		"To what extent were the Hack the North organizers informed in the incident?",
+		"Which protocol or procedure was followed? Was it MLH's incident response procedure or Waterloo's Engineering building safety protocol?",
+		"If the protocol was being followed explicitly, why was the building not evacuated? Since it was clear that there was no bomb threat, why was a drastic action necessary?",
+		"Does MLH have authority to ban people from hackathons against organizers' wishes?"
 	];
 	$(function() {
 		$('.hl').tipsy({
